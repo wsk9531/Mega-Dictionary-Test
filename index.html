@@ -37,10 +37,12 @@
 					<div class="form-group">
 						<label class="col-md-4 control-label" for="postTranslateSubmit"></label>
 						<div class="col-md-8">
+                            <button type="button" id="postTranslateCheckSubmit" name="postTranslateCheckSubmit" class="btn btn-primary" onclick="checkData('translate.js', 'infoDiv', 
+								englishtext.value);">Suggest</button>
 							<button type="button" id="postTranslateSubmit" name="postTranslateSubmit" class="btn btn-success" onclick="sendData('translate.js', 'infoDiv', 
 								englishtext.value, 
-								spanishtext.value);">Submit!</button>
-							<button id="postTranslateReset" name="postTranslateReset" type="reset" class="btn btn-danger">Reset!</button>
+								spanishtext.value);">Submit</button>
+							<button id="postTranslateReset" name="postTranslateReset" type="reset" class="btn btn-danger">Reset</button>
 						</div>
 					</div>
 					<!-- Success/Fail message -->
