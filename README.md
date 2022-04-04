@@ -1,5 +1,5 @@
 # Mega-Dictionary-Test
-
+    Time spent: 6 hours.
 # Build Instructions
 1. Download [XAMPP 8.1.4](https://www.apachefriends.org/download.html)
 2. Place the mdt folder in xampp/htdocs/
