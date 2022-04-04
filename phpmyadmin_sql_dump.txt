@@ -1,0 +1,61 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Apr 04, 2022 at 11:52 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.4
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Database: `dictionary`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `english`
+--
+
+CREATE TABLE IF NOT EXISTS `english` (
+  `english_id` int(11) NOT NULL AUTO_INCREMENT,
+  `contents` varchar(255) NOT NULL,
+  PRIMARY KEY (`english_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `english`
+--
+
+INSERT INTO `english` (`english_id`, `contents`) VALUES
+(10, 'Hello'),
+(11, 'Goodbye'),
+(12, 'Let\'s get this bread'),
+(13, 'Rugby player');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `spanish`
+--
+
+CREATE TABLE IF NOT EXISTS `spanish` (
+  `spanish_id` int(11) NOT NULL AUTO_INCREMENT,
+  `contents` varchar(255) NOT NULL,
+  PRIMARY KEY (`spanish_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `spanish`
+--
+
+INSERT INTO `spanish` (`spanish_id`, `contents`) VALUES
+(10, 'Hola'),
+(11, 'Adiós '),
+(12, 'Consigamos este pan'),
+(13, 'Jugador de rugby');
+COMMIT;
