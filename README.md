@@ -8,8 +8,8 @@
 5. Access the application via [localhost/mdt](http://localhost/mdt/)
 
 # Todo:
-Use a client-side validation library (like validate.js) to clean submitted data on the client-side, after db entry is complete.
-
+-   Use a client-side validation library (like validate.js) to clean submitted data on the client-side, before making POST request.
+-    Fix up the suggest functionality to split multi-word strings and suggest all at once - currently only single word is supported
 # Note:
 This application utilizes XAMPP and so is not secure for production/deployment.
 
@@ -26,18 +26,33 @@ This application utilizes XAMPP and so is not secure for production/deployment.
 
     Achieved :) See index.html
 -	We should be able to create new English phrases to load into the dictionary in the database.
-
-    In progress! 
-
 -	We should be able to create translations in another language for each English phrase in the database.
 
-    In progress! Due to time constraints, this must be done at the same time as loading an English phrase, but a seperate function to SELECT english words with no corresponding translation would be a great addition.
+    <figure>
+    <img src="images\submission.PNG">
+    <figcaption>Create phrase and translation</figcaption>
+    </figure>
+
+
+
+    Due to time constraints, this must be done at the same time as loading an English phrase, but a seperate function to SELECT english words with no corresponding translation would be a great addition.
 
 
 -	The main screen should display suggested translated phrases when it picks up an English phrase in the English text
 
-    In progress - uses the 'Suggest' button to send an AJAX request. I did not have time to create functionality similar to Google translate's real-time autocomplete 
+    <figure>
+    <img src="images/full_suggest.png" >
+    <figcaption>Suggest button working with a full, single word</figcaption>
+    </figure>
+
+    <figure>
+    <img src="images/partial_suggest.png" >
+    <figcaption>Partial matches also supported</figcaption>
+    </figure>
+
+    In progress - uses the 'Suggest' button to send an AJAX request. I did not have time to create functionality similar to Google translate's real-time autocomplete. There is also a bug where a multi-word strings are not exploding correctly, to make a suggestion for every word present, at once.
 
 -	The system should support character entry and storage for all major languages
 
     Achieved - Uses UTF8 encoding, which should tick this box!
+

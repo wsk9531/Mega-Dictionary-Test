@@ -71,7 +71,7 @@ function suggestData(dataSource, divID, englishtext) {
         if(xhr) {
             var place = document.getElementById(divID);
             var requestBody = 
-            "name=" + encodeURIComponent(englishtext);
+            "english=" + encodeURIComponent(englishtext);
 
             xhr.open("POST", "/mdt/suggest.php", true);
 			xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
